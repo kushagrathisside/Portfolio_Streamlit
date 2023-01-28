@@ -11,6 +11,7 @@ def sendmail(option,body_recieved):
             subject="{option} from your Portfolio",
             contents=body, attachments=None,
         )
+        st.write("Mail Sent! :tada:")
     except:
         st.write("Service Unavailable")
 st.title("Kushagra Srivastava :wave: ")
@@ -18,7 +19,7 @@ st.write("""Hi! My name is ***Kushagra Srivastava*** and I am Computer Science U
 st.markdown(f'''<a href='https://www.linkedin.com/in/kushagrathisside/'><button>LinkedIn</button></a>       <a href='https://www.github.com/kushagrathisside/'><button>Github</button></a>       <a href='https://medium.com/@kushagrathisside'><button>Medium</button></a>''',unsafe_allow_html=True)
 
 st.header("Want to Talk?")
-Intro = st.text_input("Tell me about you","Hi Kushagra! My name is ....")
+Intro = st.text_input("Tell me about you","Hi Kushagra! My name is .... ")
 option_selected = st.selectbox('So, What do you want to talk about?',
           ('Technical Queries 🤖', 'Guidance Query 🙋‍♂️', 'Casual Talk ☕'))
 explaination = st.text_input("Can you please elaborate about your {option}","So, I want to share that...")
